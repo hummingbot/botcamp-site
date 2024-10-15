@@ -34,7 +34,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${satoshi.variable} antialiased`}
+        className={`${satoshi.variable} ${geistSans.variable} ${geistMono.variable} antialiased`}
       >
         {children}
       </body>

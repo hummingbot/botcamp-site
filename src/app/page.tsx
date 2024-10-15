@@ -9,7 +9,6 @@ import Cohorts from "@/components/sections/Cohorts"
 import Testimonials from "@/components/sections/Testimonials"
 import FAQ from "@/components/sections/FAQ"
 import CTA from "@/components/sections/CTA"
-import { StitchesLogoIcon } from "@radix-ui/react-icons"
 
 export default function BotcampLandingPageComponent() {
   return (
