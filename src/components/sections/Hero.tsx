@@ -17,6 +17,17 @@ export default function Hero() {
             <Button variant="default">Explore Courses</Button>
             <Button variant="outline" className="text-black bg-white hover:bg-gray-100 hover:text-black">Join a Cohort</Button>
           </div>
+          
+          {/* YouTube Video Component */}
+          <div className="mt-12 aspect-w-16 aspect-h-9 max-w-3xl w-full">
+            <iframe
+              src="https://www.youtube.com/embed/gu77lJqa6Aw"
+              frameBorder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+              allowFullScreen
+              className="w-full h-full"
+            ></iframe>
+          </div>
         </div>
       </div>
     </section>
