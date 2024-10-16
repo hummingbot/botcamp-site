@@ -12,7 +12,7 @@ import CTA from "@/components/sections/CTA"
 
 export default function BotcampLandingPageComponent() {
   return (
-    <div className="flex flex-col min-h-screen bg-black text-gray-100">
+    <div className="flex flex-col min-h-screen bg-background text-foreground dark">
       <Header />
       <main className="flex-1">
         <Hero />
@@ -27,4 +27,3 @@ export default function BotcampLandingPageComponent() {
     </div>
   )
 }
-
