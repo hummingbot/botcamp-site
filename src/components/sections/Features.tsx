@@ -5,23 +5,23 @@ export default function Features() {
   const features = [
     {
       icon: TrendingUp,
-      title: "Master Algo Trading",
-      description: "Learn to create, test, and deploy sophisticated trading algorithms using Hummingbot."
+      title: "Learn Market Making",
+      description: "Learn how to design, code, and deploy market making strategies on both CEX and DEX."
     },
     {
       icon: Users,
-      title: "Join the Dark Side",
+      title: "Join a Global Trader Community",
       description: "Connect with fellow traders and market makers in our exclusive community."
     },
     {
       icon: Zap,
-      title: "Real-World Application",
-      description: "Apply your skills immediately with live trading exercises and real market data."
+      title: "Professional Instruction",
+      description: "Online live sessions and office hours taught by the Hummingbot core maintainers."
     }
   ]
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-gray-800">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-black">
       <div className="container px-4 md:px-6">
         <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Why Choose Botcamp?</h2>
         <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">

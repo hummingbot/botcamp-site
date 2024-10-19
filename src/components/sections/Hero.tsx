@@ -1,53 +1,113 @@
+import React from 'react';
 import { Button } from "@/components/ui/button"
+import Typewriter from 'typewriter-effect';
+
+function generateRandomCandle(index: number) {
+  const isGreen = Math.random() > 0.5;
+  const color = isGreen ? "#4CAF50" : "#F44336";
+  const x = 5 + index * 10;
+  
+  const totalHeight = Math.random() * 20 + 10;
+  const bodyHeight = Math.random() * 3 + 2;
+  const wickHeight = Math.random() * 5 + 2;
+  
+  const bodyStart = (totalHeight - bodyHeight) / 2;
+  const bodyEnd = bodyStart + bodyHeight;
+  
+  const hasTopWick = Math.random() > 0.3;
+  const hasBottomWick = Math.random() > 0.3;
+
+  const verticalOffset = Math.random() * 15;
+
+  return (
+    <g key={index} transform={`translate(0, ${verticalOffset})`}>
+      {/* Top wick */}
+      {hasTopWick && (
+        <line 
+          x1={x} y1={bodyStart - wickHeight} 
+          x2={x} y2={bodyStart} 
+          stroke={color} 
+          strokeWidth="0.2"
+        />
+      )}
+      {/* Candle body */}
+      <rect 
+        x={x - 1.5} // Increased width of the candle body
+        y={bodyStart} 
+        width="3" // Increased width of the candle body
+        height={bodyHeight} 
+        fill={color} 
+      />
+      {/* Bottom wick */}
+      {hasBottomWick && (
+        <line 
+          x1={x} y1={bodyEnd} 
+          x2={x} y2={bodyEnd + wickHeight} 
+          stroke={color} 
+          strokeWidth="0.2"
+        />
+      )}
+    </g>
+  );
+}
 
 export default function Hero() {
+  const candleCount = 10;
+  const [candles, setCandles] = React.useState<React.ReactNode[]>([]);
+
+  React.useEffect(() => {
+    setCandles(Array.from({ length: candleCount }, (_, i) => generateRandomCandle(i)));
+  }, []);
+
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative">
-      {/* Background SVG */}
-      <div className="absolute inset-0 z-0 opacity-10">
-        <svg className="w-full h-full" xmlns="http://www.w3.org/2000/svg">
+      {/* Grid background */}
+      <div className="absolute inset-0 z-0 opacity-5">
+        <svg 
+          className="w-full h-full" 
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 100"
+        >
           <defs>
-            <pattern id="orderbook" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              <rect x="0" y="0" width="100" height="1" fill="#4CAF50" opacity="0.5" />
-              <rect x="0" y="20" width="80" height="1" fill="#4CAF50" opacity="0.5" />
-              <rect x="0" y="40" width="60" height="1" fill="#4CAF50" opacity="0.5" />
-              <rect x="0" y="60" width="40" height="1" fill="#F44336" opacity="0.5" />
-              <rect x="0" y="80" width="20" height="1" fill="#F44336" opacity="0.5" />
-            </pattern>
-            <pattern id="candlesticks" x="0" y="0" width="100" height="100" patternUnits="userSpaceOnUse">
-              {/* Green candle */}
-              <line x1="10" y1="10" x2="10" y2="90" stroke="#4CAF50" strokeWidth="1" />
-              <rect x="8" y="30" width="4" height="40" fill="#4CAF50" />
-              {/* Red candle */}
-              <line x1="30" y1="20" x2="30" y2="80" stroke="#F44336" strokeWidth="1" />
-              <rect x="28" y="20" width="4" height="30" fill="#F44336" />
-              {/* Green candle */}
-              <line x1="50" y1="15" x2="50" y2="85" stroke="#4CAF50" strokeWidth="1" />
-              <rect x="48" y="45" width="4" height="25" fill="#4CAF50" />
-              {/* Red candle */}
-              <line x1="70" y1="25" x2="70" y2="75" stroke="#F44336" strokeWidth="1" />
-              <rect x="68" y="25" width="4" height="20" fill="#F44336" />
-              {/* Green candle */}
-              <line x1="90" y1="5" x2="90" y2="95" stroke="#4CAF50" strokeWidth="1" />
-              <rect x="88" y="50" width="4" height="35" fill="#4CAF50" />
+            <pattern id="grid" width="5" height="5" patternUnits="userSpaceOnUse">
+              <path d="M 5 0 L 0 0 0 5" fill="none" stroke="gray" strokeWidth="0.1"/>
             </pattern>
           </defs>
-          <rect x="0" y="0" width="100%" height="100%" fill="url(#orderbook)" />
-          <rect x="0" y="0" width="100%" height="100%" fill="url(#candlesticks)" />
-          {/* Single price line */}
-          <path d="M0 80 Q25 70, 50 60 T100 20" fill="none" stroke="#FFA500" strokeWidth="2" />
+          <rect width="100" height="100" fill="url(#grid)" />
+        </svg>
+      </div>
+
+      {/* Candle background */}
+      <div className="absolute inset-0 z-10 opacity-20 flex items-center">
+        <svg 
+          className="w-full h-full" 
+          xmlns="http://www.w3.org/2000/svg"
+          preserveAspectRatio="none"
+          viewBox="0 0 100 50"
+        >
+          {candles}
         </svg>
       </div>
 
       {/* Existing content */}
-      <div className="container px-4 md:px-6 relative z-10">
+      <div className="container px-4 md:px-6 relative z-20">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-6">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-primary">
-              Learn the Dark Arts of Market Making
+              Learn the Dark Arts of{' '}
+              <span className="text-secondary">
+                <Typewriter
+                  options={{
+                    strings: ['Market Making', 'Algorithmic Trading', 'Crypto Trading Bots', 'Quantitative Research', 'DEX LP-ing'],
+                    autoStart: true,
+                    loop: true,
+                  }}
+                />
+              </span>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
-              Master algo trading and market making with Botcamp, using the powerful open-source Hummingbot framework.
+              Masterclasses for crypto market makers and algo traders, taught using the open source Hummingbot framework.
             </p>
           </div>
           
@@ -72,7 +132,6 @@ export default function Hero() {
               Join a Cohort
             </Button>
           </div>
-
         </div>
       </div>
     </section>
