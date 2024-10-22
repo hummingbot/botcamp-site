@@ -1,23 +1,36 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card"
 import { TrendingUp, Users, Zap } from "lucide-react"
 
+const getIconColor = (index: number) => {
+  switch (index % 3) {
+    case 0:
+      return "text-primary";
+    case 1:
+      return "text-accent";
+    case 2:
+      return "text-destructive";
+    default:
+      return "text-primary";
+  }
+};
+
 export default function Features() {
   const features = [
     {
       icon: TrendingUp,
       title: "Learn Market Making",
-      description: "Learn how to design, code, and deploy market making strategies on both CEX and DEX."
-    },
-    {
-      icon: Users,
-      title: "Join a Global Trader Community",
-      description: "Connect with fellow traders and market makers in our exclusive community."
+      description: "Learn to design, code, and deploy custom strategies on both CEX and DEX."
     },
     {
       icon: Zap,
       title: "Professional Instruction",
-      description: "Online live sessions and office hours taught by the Hummingbot core maintainers."
-    }
+      description: "Online live sessions and office hours taught by the core maintainers of Hummingbot."
+    },
+    {
+      icon: Users,
+      title: "Join a Global Trader Community",
+      description: "Connect with thousands of other algo traders and market makers in private Discord channels."
+    },
   ]
 
   return (
@@ -28,7 +41,7 @@ export default function Features() {
           {features.map((feature, index) => (
             <Card key={index} className="bg-gray-900 border-gray-800">
               <CardHeader>
-                <feature.icon className="h-8 w-8 mb-2 text-primary" />
+                <feature.icon className={`h-8 w-8 mb-2 ${getIconColor(index)}`} />
                 <CardTitle className="text-white">{feature.title}</CardTitle>
               </CardHeader>
               <CardContent>
@@ -41,4 +54,3 @@ export default function Features() {
     </section>
   )
 }
-

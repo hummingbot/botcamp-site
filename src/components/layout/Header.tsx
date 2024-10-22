@@ -15,7 +15,9 @@ export default function Header() {
           height={40}
           className="mr-3"
         />
-        <span className="text-xl font-bold">Botcamp</span>
+        <span className="text-xl font-bold">
+          Hummingbot <span className="text-primary">Botcamp</span>
+        </span>
       </Link>
       
       {/* Hamburger menu button */}

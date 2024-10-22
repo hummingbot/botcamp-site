@@ -99,7 +99,7 @@ export default function Hero() {
               <span className="text-secondary">
                 <Typewriter
                   options={{
-                    strings: ['Market Making', 'Algorithmic Trading', 'Crypto Trading Bots', 'Quantitative Research', 'DEX LP-ing'],
+                    strings: ['Market Making', 'Algorithmic Trading', 'Quantitative Research', 'Backtesting & Optimization', 'AI-Based Strategies', 'DEX Liquidity Provision'],
                     autoStart: true,
                     loop: true,
                   }}
