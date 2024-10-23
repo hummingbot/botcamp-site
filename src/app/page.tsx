@@ -14,7 +14,7 @@ export default function BotcampLandingPageComponent() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground dark">
       <Header />
-      <main className="flex-1">
+      <main className="flex-1 flex flex-col items-center">
         <Hero />
         <Features />
         <Courses />

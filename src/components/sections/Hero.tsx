@@ -1,64 +1,9 @@
 import React from 'react';
-import { Button } from "@/components/ui/button"
 import Typewriter from 'typewriter-effect';
-
-function generateRandomCandle(index: number) {
-  const isGreen = Math.random() > 0.5;
-  const color = isGreen ? "#4CAF50" : "#F44336";
-  const x = 5 + index * 10;
-  
-  const totalHeight = Math.random() * 20 + 10;
-  const bodyHeight = Math.random() * 3 + 2;
-  const wickHeight = Math.random() * 5 + 2;
-  
-  const bodyStart = (totalHeight - bodyHeight) / 2;
-  const bodyEnd = bodyStart + bodyHeight;
-  
-  const hasTopWick = Math.random() > 0.3;
-  const hasBottomWick = Math.random() > 0.3;
-
-  const verticalOffset = Math.random() * 15;
-
-  return (
-    <g key={index} transform={`translate(0, ${verticalOffset})`}>
-      {/* Top wick */}
-      {hasTopWick && (
-        <line 
-          x1={x} y1={bodyStart - wickHeight} 
-          x2={x} y2={bodyStart} 
-          stroke={color} 
-          strokeWidth="0.2"
-        />
-      )}
-      {/* Candle body */}
-      <rect 
-        x={x - 1.5} // Increased width of the candle body
-        y={bodyStart} 
-        width="3" // Increased width of the candle body
-        height={bodyHeight} 
-        fill={color} 
-      />
-      {/* Bottom wick */}
-      {hasBottomWick && (
-        <line 
-          x1={x} y1={bodyEnd} 
-          x2={x} y2={bodyEnd + wickHeight} 
-          stroke={color} 
-          strokeWidth="0.2"
-        />
-      )}
-    </g>
-  );
-}
+import { Button } from "@/components/ui/button"
+import CandlesBackground from "@/components/ui/candles-background";
 
 export default function Hero() {
-  const candleCount = 10;
-  const [candles, setCandles] = React.useState<React.ReactNode[]>([]);
-
-  React.useEffect(() => {
-    setCandles(Array.from({ length: candleCount }, (_, i) => generateRandomCandle(i)));
-  }, []);
-
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative">
       {/* Grid background */}
@@ -78,28 +23,17 @@ export default function Hero() {
         </svg>
       </div>
 
-      {/* Candle background */}
-      <div className="absolute inset-0 z-10 opacity-20 flex items-center">
-        <svg 
-          className="w-full h-full" 
-          xmlns="http://www.w3.org/2000/svg"
-          preserveAspectRatio="none"
-          viewBox="0 0 100 50"
-        >
-          {candles}
-        </svg>
-      </div>
+      <CandlesBackground />
 
-      {/* Existing content */}
-      <div className="container px-4 md:px-6 relative z-20">
+      <div className="container mx-auto px-4 md:px-6 relative z-20">
         <div className="flex flex-col items-center space-y-4 text-center">
           <div className="space-y-6">
             <h1 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl lg:text-6xl/none text-primary">
-              Learn the Dark Arts of{' '}
+              Learn how to build{' '}
               <span className="text-secondary">
                 <Typewriter
                   options={{
-                    strings: ['Market Making', 'Algorithmic Trading', 'Quantitative Research', 'Backtesting & Optimization', 'AI-Based Strategies', 'DEX Liquidity Provision'],
+                    strings: ['market making bots', 'DEX arbitrage bots', 'high-frequency trading bots', 'funding rate arbitrage bots', 'data collection bots', 'AMM LP bots'],
                     autoStart: true,
                     loop: true,
                   }}
@@ -107,7 +41,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
-              Masterclasses for crypto market makers and algo traders, taught using the open source Hummingbot framework.
+              Professional training and certification for crypto market makers, taught using the Hummingbot open source framework
             </p>
           </div>
           

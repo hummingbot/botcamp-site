@@ -32,18 +32,15 @@ export default function Header() {
 
       {/* Navigation menu */}
       <nav className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row absolute md:relative top-16 left-0 right-0 bg-black md:bg-transparent md:top-0 md:ml-auto items-center gap-6 sm:gap-8 p-4 md:p-0`}>
-        <Link className="text-base font-medium hover:text-primary" href="#">
+        <Link className="text-base font-medium hover:text-primary" href="https://www.botcamp.xyz/slides/all">
           Courses
         </Link>
-        <Link className="text-base font-medium hover:text-primary" href="#">
+        <Link className="text-base font-medium hover:text-primary" href="#/cohorts">
           Cohorts
         </Link>
-        <Link className="text-base font-medium hover:text-primary" href="#">
-          About
-        </Link>
-        <button className="text-base font-medium bg-primary text-black px-4 py-2 rounded-md hover:bg-secondary">
+        <Link className="text-base font-medium bg-primary text-black px-4 py-2 rounded-md hover:bg-secondary" href="https://www.botcamp.xyz/web/login">
           Sign In
-        </button>
+        </Link>
       </nav>
     </header>
   )
