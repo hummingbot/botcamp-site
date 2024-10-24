@@ -1,6 +1,7 @@
 import Image from 'next/image'
 import { TestimonialCard } from "@/components/ui/testimonial-card"
 import { Button } from "@/components/ui/button"
+import { ArrowRight } from "lucide-react"
 // Company logos
 import binance from "@/images/logos/binance-dark.png"
 import amazewallet from "@/images/logos/amazewallet.png"
@@ -113,6 +114,7 @@ export default function Testimonials() {
                 rel="noopener noreferrer"
               >
                 Watch More Testimonials
+                <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>
           </div>
