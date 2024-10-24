@@ -1,6 +1,7 @@
 import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
+import botcampLogo from "@/images/botcamp-no-text.png"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -9,7 +10,7 @@ export default function Header() {
     <header className="px-6 lg:px-8 h-16 flex items-center bg-black border-b border-gray-800">
       <Link className="flex items-center justify-center" href="#">
         <Image
-          src="/botcamp-no-text.png"
+          src={botcampLogo}
           alt="Botcamp Logo"
           width={40}
           height={40}

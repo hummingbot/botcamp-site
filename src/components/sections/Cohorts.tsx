@@ -1,6 +1,7 @@
 import Image from "next/image"
 import { Button } from "@/components/ui/button"
 import { Calendar } from "lucide-react"
+import cohortImage from "@/images/live-session.webp"
 
 export default function Cohorts() {
   return (
@@ -19,7 +20,7 @@ export default function Cohorts() {
         <div className="flex flex-col md:flex-row gap-8">
           <div className="w-full md:w-1/2 h-[300px] md:h-auto relative">
             <Image
-              src="/live-session.webp"
+              src={cohortImage}
               alt="Cohort program"
               layout="fill"
               objectFit="cover"
