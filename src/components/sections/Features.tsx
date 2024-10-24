@@ -34,21 +34,23 @@ export default function Features() {
   ]
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-black">
-      <div className="container px-4 md:px-6">
-        <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Why Choose Botcamp?</h2>
-        <div className="grid gap-6 lg:grid-cols-3 lg:gap-12">
-          {features.map((feature, index) => (
-            <Card key={index} className="bg-gray-900 border-gray-800">
-              <CardHeader>
-                <feature.icon className={`h-8 w-8 ${getIconColor(index)}`} />
-                <CardTitle className="text-white">{feature.title}</CardTitle>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-300">{feature.description}</p>
-              </CardContent>
-            </Card>
-          ))}
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative">
+      <div className="container mx-auto px-4 md:px-6 relative z-10">
+        <div className="flex flex-col items-center">
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-white">Why Choose Botcamp?</h2>
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mt-8">
+            {features.map((feature, index) => (
+              <Card key={index} className="bg-gray-900 border-gray-800">
+                <CardHeader className="flex flex-row items-center space-x-4">
+                  <feature.icon className={`h-8 w-8 ${getIconColor(index)}`} />
+                  <CardTitle className="text-white text-xl">{feature.title}</CardTitle>
+                </CardHeader>
+                <CardContent>
+                  <p className="text-gray-300">{feature.description}</p>
+                </CardContent>
+              </Card>
+            ))}
+          </div>
         </div>
       </div>
     </section>
