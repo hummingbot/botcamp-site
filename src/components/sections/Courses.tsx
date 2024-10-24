@@ -32,7 +32,7 @@ export default function Courses() {
         <div className="flex flex-col items-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Our Courses</h2>
           <p className="text-xl text-gray-300 text-center mb-12 max-w-2xl">
-            Master algorithmic trading and market making with our comprehensive courses. From beginners to advanced traders, we've got you covered.
+            Master algorithmic trading and market making with our comprehensive courses. From beginners to advanced traders, we&apos;ve got you covered.
           </p>
           <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mb-12">
             {courseFeatures.map((feature, index) => (
