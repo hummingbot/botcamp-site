@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 // Company logos
 import binance from "@/images/logos/binance-dark.png"
 import amazewallet from "@/images/logos/amazewallet.png"
-import injective from "@/images/logos/injective.png"
+import injective from "@/images/logos/Injective.png"
 import decrypt from "@/images/logos/decrypt-dark.png"
 import harvard from "@/images/logos/harvard-dark.png"
 import apple from "@/images/logos/apple-dark.png"
