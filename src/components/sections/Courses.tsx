@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Video, HelpCircle, Trophy, Code, BookOpen, Cog } from "lucide-react"
+import { ArrowRight, Video, HelpCircle, Star, Code, BookOpen, Cog } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const getIconColor = (index: number) => {
@@ -17,12 +17,10 @@ const getIconColor = (index: number) => {
 
 export default function Courses() {
   const courseFeatures = [
-    { icon: Video, title: "Videos", description: "Engage with our comprehensive video lessons that break down complex concepts into easy-to-understand segments." },
-    { icon: HelpCircle, title: "Quizzes", description: "Test your knowledge and reinforce your learning with interactive quizzes designed to challenge and educate." },
-    { icon: Trophy, title: "Challenge", description: "Put your skills to the test with real-world trading scenarios and problem-solving exercises." },
-    { icon: Code, title: "Code", description: "Get hands-on experience with coding exercises that simulate real trading algorithms and strategies." },
-    { icon: BookOpen, title: "Theory", description: "Dive deep into the theoretical foundations of algorithmic trading and market making." },
-    { icon: Cog, title: "Hands-On", description: "Apply your knowledge through practical, hands-on projects that mirror industry practices." },
+    { icon: Star, title: "Strategies", description: "Each course focuses on a specific trading strategy, such as market making and arbitrage." },
+    { icon: Video, title: "Videos", description: "Video lessons break down strategy theory and implementation into easy-to-understand segments." },
+    { icon: HelpCircle, title: "Quizzes", description: "Reinforce your learning with interactive quizzes designed to test your grasp of the material." },
+    { icon: Code, title: "Challenges", description: "Put your skills to the test with coding exercises that test your ability to customize strategies." },
   ]
 
   return (
@@ -32,9 +30,9 @@ export default function Courses() {
         <div className="flex flex-col items-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-white">Our Courses</h2>
           <p className="text-xl text-gray-300 text-center mb-12 max-w-2xl">
-            Master algorithmic trading and market making with our comprehensive courses. From beginners to advanced traders, we&apos;ve got you covered.
+            Pre-recorded courses that cover the fundamentals of algorithmic trading and market making.
           </p>
-          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 w-full mb-12">
+          <div className="grid gap-6 sm:grid-cols-1 md:grid-cols-2 w-full mb-12">
             {courseFeatures.map((feature, index) => (
               <Card key={index} className="bg-gray-900 border-gray-800">
                 <CardHeader className="flex flex-row items-center space-x-4">

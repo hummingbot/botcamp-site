@@ -41,7 +41,7 @@ export default function Hero() {
               </span>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
-              Professional training and certification for crypto market makers, taught using the Hummingbot open source framework
+              Education for crypto market makers and algorithmic traders, taught using the Hummingbot open source framework
             </p>
           </div>
           

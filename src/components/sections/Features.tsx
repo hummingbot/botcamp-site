@@ -18,23 +18,23 @@ export default function Features() {
   const features = [
     {
       icon: TrendingUp,
-      title: "Master Market Making",
-      description: "Learn market making, from the business to the code, and how to profit from it."
+      title: "Learn Market Making",
+      description: "Learn to design, backtest, and operate market making strategies in production."
     },
     {
       icon: Zap,
       title: "Professional Instruction",
-      description: "Taught by maintainers of Hummingbot, the leading open source crypto bot framework."
+      description: "Taught by core maintainers of Hummingbot, the open source crypto trading bot framework."
     },
     {
       icon: Users,
-      title: "Join a Global Trader Community",
-      description: "Connect and team up with other Botcamp students in private Discord channels."
+      title: "Join an Exclusive Community",
+      description: "Team up with other Botcamp students and do great things together!"
     },
   ]
 
   return (
-    <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative">
+    <section className="w-full py-12 md:py-24 lg:py-32 bg-[linear-gradient(90deg,rgb(0,0,0)_0%,rgba(95,255,215,0.2)_100%)] relative">
       <div className="container mx-auto px-4 md:px-6 relative z-10">
         <div className="flex flex-col items-center">
           <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-12 text-white">Why Choose Botcamp?</h2>
