@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import Link from "next/link"
 
 export default function CTA() {
   return (
@@ -10,18 +11,22 @@ export default function CTA() {
         <div className="flex flex-col items-center">
           <div className="space-y-2 text-center">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
-              Ready to Dominate the Markets?
+              Ready to Start Your Algorithmic Trading Journey?
             </h2>
             <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
               Join the ranks of elite traders who are reshaping the landscape of algorithmic trading with Botcamp.
             </p>
           </div>
           <div className="space-x-4 mt-6">
-            <Button variant="default" size="lg">
-              Explore Courses
+            <Button variant="default" size="lg" asChild>
+              <Link href="https://www.botcamp.xyz/slides/all">
+                Explore Courses
+              </Link>
             </Button>
-            <Button variant="outline" size="lg">
-              Join a Cohort
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/cohorts">
+                Join a Cohort
+              </Link>
             </Button>
           </div>
         </div>

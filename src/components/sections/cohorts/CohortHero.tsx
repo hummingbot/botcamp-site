@@ -1,7 +1,11 @@
 import { Button } from "@/components/ui/button"
 import CandlesBackground from "@/components/ui/candles-background"
 
-export default function CohortHero() {
+interface CohortHeroProps {
+  cohortLink: string;
+}
+
+export function CohortHero({ cohortLink }: CohortHeroProps) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative">
       <CandlesBackground />
@@ -15,13 +19,13 @@ export default function CohortHero() {
                 Botcamp Cohorts
               </h1>
               <p className="mx-auto lg:mx-0 max-w-[700px] text-gray-300 md:text-xl">
-                Join an intensive 6-week program to master algorithmic trading with personalized mentorship
+                Learn market making in an intensive 6-week program with personalized mentorship and peer support
               </p>
             </div>
             <div className="mt-8">
               <Button variant="default" size="lg" asChild>
-                <a href="https://www.botcamp.xyz/event/botcamp-cohort-10-9/register">
-                  Join Nov 2024 Cohort
+                <a href={cohortLink}>
+                  Join Cohort 10
                 </a>
               </Button>
             </div>

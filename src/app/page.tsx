@@ -8,6 +8,7 @@ import Testimonials from "@/components/sections/Testimonials"
 import Courses from "@/components/sections/Courses"
 import Cohorts from "@/components/sections/Cohorts"
 import FAQ from "@/components/sections/FAQ"
+import CTA from "@/components/sections/CTA"
 
 export default function BotcampLandingPageComponent() {
   return (
@@ -20,6 +21,7 @@ export default function BotcampLandingPageComponent() {
         <Courses />
         <Cohorts />
         <FAQ />
+        <CTA />
       </main>
       <Footer />
     </div>

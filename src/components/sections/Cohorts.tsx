@@ -39,8 +39,8 @@ export default function Cohorts() {
               <li>Includes access to 3 Botcamp introductory courses</li>
             </ul>
             <Button variant="default" size="lg" asChild>
-              <a href="https://www.botcamp.xyz/event/botcamp-cohort-10-9/register" target="_blank" rel="noopener noreferrer">
-                Join Cohort 10
+              <a href="/cohorts">
+                See Cohort Details
               </a>
             </Button>
           </div>

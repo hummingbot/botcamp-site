@@ -1,5 +1,5 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Video, HelpCircle, Star, Code, BookOpen, Cog } from "lucide-react"
+import { ArrowRight, Video, HelpCircle, Star, Code } from "lucide-react"
 import { Button } from "@/components/ui/button"
 
 const getIconColor = (index: number) => {

@@ -1,19 +1,19 @@
 export default function CohortMetrics() {
     const metrics = [
       {
-        value: "90%",
-        label: "Completion Rate",
-        description: "Of students complete their capstone project"
+        value: "10+",
+        label: "Live Sessions",
+        description: "Hands-on workshops taught by industry experts"
       },
       {
-        value: "6:1",
-        label: "Student-Mentor Ratio",
-        description: "Ensuring personalized attention"
+        value: "8:1",
+        label: "Student-Instructor Ratio",
+        description: "Learn in a structured, personalized environment"
       },
       {
-        value: "500+",
+        value: "300+",
         label: "Alumni Network",
-        description: "Active traders worldwide"
+        description: "Join a community of successful traders and developers"
       }
     ]
   
