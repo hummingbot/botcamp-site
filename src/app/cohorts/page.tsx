@@ -15,11 +15,12 @@ import { Button } from "@/components/ui/button"
 const COHORT_LINK = "https://courses.botcamp.xyz/event/botcamp-cohort-10-9/register";
 const COHORT_HELIO_LINK = "https://app.hel.io/pay/66ba435d1011b504426d1d0c";
 const COHORT_START_DATE = new Date('2024-11-05');
+const COURSES_LINK = "https://courses.botcamp.xyz/slides/all";
 
 export default function CohortsPage() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground dark">
-      <Header />
+      <Header coursesLink={COURSES_LINK} />
       <main className="flex-1 flex flex-col items-center">
         <CohortHero cohortLink={COHORT_LINK} helioLink={COHORT_HELIO_LINK} />
         <CohortMetrics />
@@ -34,7 +35,7 @@ export default function CohortsPage() {
         <CohortProjects />
         <CohortFAQ />
         
-        {/* New CTA Section */}
+        {/* CTA Section */}
         <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative">
           <div className="absolute inset-0 bg-grid-pattern"></div>
           <div className="container flex flex-col items-center justify-center gap-8 text-center relative z-10">
@@ -61,7 +62,7 @@ export default function CohortsPage() {
           </div>
         </section>
       </main>
-      <Footer />
+      <Footer coursesLink={COURSES_LINK} />
     </div>
   )
 }

@@ -1,8 +1,11 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
-import { COURSES_LINK } from "@/app/page"
 
-export default function CTA() {
+interface CTAProps {
+  coursesLink: string;
+}
+
+export default function CTA({ coursesLink }: CTAProps) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative border-t border-gray-800">
       {/* Add grid background */}
@@ -20,7 +23,7 @@ export default function CTA() {
           </div>
           <div className="space-x-4 mt-6">
             <Button variant="default" size="lg" asChild>
-              <Link href={COURSES_LINK}>
+              <Link href={coursesLink}>
                 Explore Courses
               </Link>
             </Button>

@@ -3,9 +3,12 @@ import Typewriter from 'typewriter-effect';
 import { Button } from "@/components/ui/button"
 import CandlesBackground from "@/components/ui/candles-background";
 import Link from "next/link";
-import { COURSES_LINK } from "@/app/page"
 
-export default function Hero() {
+interface HeroProps {
+  coursesLink: string;
+}
+
+export default function Hero({ coursesLink }: HeroProps) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative">
       {/* Grid background */}
@@ -62,7 +65,7 @@ export default function Hero() {
 
           <div className="space-x-4 space-y-4">
             <Button variant="default" size="lg" asChild>
-              <Link href={COURSES_LINK}>
+              <Link href={coursesLink}>
                 Explore Courses
               </Link>
             </Button>

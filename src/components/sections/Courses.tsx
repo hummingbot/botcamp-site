@@ -1,7 +1,7 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card"
-import { ArrowRight, Video, HelpCircle, Star, Code } from "lucide-react"
+import { Video, HelpCircle, Star, Code } from "lucide-react"
 import { Button } from "@/components/ui/button"
-import { COURSES_LINK } from "@/app/page"
+import Link from "next/link"
 
 const getIconColor = (index: number) => {
   switch (index % 3) {
@@ -16,7 +16,11 @@ const getIconColor = (index: number) => {
   }
 };
 
-export default function Courses() {
+interface CoursesProps {
+  coursesLink: string;
+}
+
+export default function Courses({ coursesLink }: CoursesProps) {
   const courseFeatures = [
     { icon: Star, title: "Strategies", description: "Each course focuses on a specific trading strategy, such as market making and arbitrage." },
     { icon: Video, title: "Videos", description: "Video lessons break down strategy theory and implementation into easy-to-understand segments." },
@@ -46,12 +50,13 @@ export default function Courses() {
               </Card>
             ))}
           </div>
-          <Button className="text-lg" size="lg" asChild>
-            <a href={COURSES_LINK} target="_blank" rel="noopener noreferrer">
-              Explore Courses
-              <ArrowRight className="ml-2 h-5 w-5" />
-            </a>
-          </Button>
+          <div className="flex justify-center mt-8">
+            <Button variant="default" size="lg" asChild>
+              <Link href={coursesLink}>
+                View All Courses
+              </Link>
+            </Button>
+          </div>
         </div>
       </div>
     </section>
