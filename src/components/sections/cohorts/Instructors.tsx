@@ -57,7 +57,7 @@ export default function CohortInstructors() {
                       instructor.image
                     ) : (
                       <Image
-                        src={instructor.image.toString()}
+                        src={instructor.image as any}
                         alt={instructor.name}
                         layout="fill"
                         className="rounded-full object-cover"
