@@ -1,6 +1,7 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card"
 import { ArrowRight, Video, HelpCircle, Star, Code } from "lucide-react"
 import { Button } from "@/components/ui/button"
+import { COURSES_LINK } from "@/app/page"
 
 const getIconColor = (index: number) => {
   switch (index % 3) {
@@ -46,7 +47,7 @@ export default function Courses() {
             ))}
           </div>
           <Button className="text-lg" size="lg" asChild>
-            <a href="https://www.botcamp.xyz/slides/all" target="_blank" rel="noopener noreferrer">
+            <a href={COURSES_LINK} target="_blank" rel="noopener noreferrer">
               Explore Courses
               <ArrowRight className="ml-2 h-5 w-5" />
             </a>

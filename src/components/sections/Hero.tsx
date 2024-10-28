@@ -3,6 +3,7 @@ import Typewriter from 'typewriter-effect';
 import { Button } from "@/components/ui/button"
 import CandlesBackground from "@/components/ui/candles-background";
 import Link from "next/link";
+import { COURSES_LINK } from "@/app/page"
 
 export default function Hero() {
   return (
@@ -61,7 +62,7 @@ export default function Hero() {
 
           <div className="space-x-4 space-y-4">
             <Button variant="default" size="lg" asChild>
-              <Link href="https://www.botcamp.xyz/slides/all">
+              <Link href={COURSES_LINK}>
                 Explore Courses
               </Link>
             </Button>

@@ -7,6 +7,14 @@ export default function Footer() {
       <nav className="sm:ml-auto flex gap-4 sm:gap-6">
         <Link 
           className="text-xs hover:text-secondary text-gray-400" 
+          href="https://courses.botcamp.xyz"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Botcamp courses
+        </Link>
+        <Link 
+          className="text-xs hover:text-secondary text-gray-400" 
           href="https://hummingbot.org"
           target="_blank"
           rel="noopener noreferrer"

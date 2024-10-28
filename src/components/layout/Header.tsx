@@ -2,6 +2,7 @@ import Link from "next/link"
 import Image from "next/image"
 import { useState } from "react"
 import botcampLogo from "@/images/botcamp-no-text.png"
+import { COURSES_LINK } from "@/app/page"
 
 export default function Header() {
   const [isMenuOpen, setIsMenuOpen] = useState(false)
@@ -33,13 +34,13 @@ export default function Header() {
 
       {/* Navigation menu */}
       <nav className={`${isMenuOpen ? 'flex' : 'hidden'} md:flex flex-col md:flex-row absolute md:relative top-16 left-0 right-0 bg-black md:bg-transparent md:top-0 md:ml-auto items-center gap-6 sm:gap-8 p-4 md:p-0`}>
-        <Link className="text-base font-medium hover:text-primary" href="https://www.botcamp.xyz/slides/all">
+        <Link className="text-base font-medium hover:text-primary" href={COURSES_LINK}>
           Courses
         </Link>
         <Link className="text-base font-medium hover:text-primary" href="/cohorts">
           Cohorts
         </Link>
-        <Link className="text-base font-medium bg-primary text-black px-4 py-2 rounded-md hover:bg-secondary" href="https://www.botcamp.xyz/web/login">
+        <Link className="text-base font-medium bg-primary text-black px-4 py-2 rounded-md hover:bg-secondary" href="https://courses.botcamp.xyz/web/login">
           Sign In
         </Link>
       </nav>

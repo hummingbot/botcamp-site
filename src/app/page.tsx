@@ -10,6 +10,8 @@ import Cohorts from "@/components/sections/Cohorts"
 import FAQ from "@/components/sections/FAQ"
 import CTA from "@/components/sections/CTA"
 
+export const COURSES_LINK = "https://courses.botcamp.xyz/slides/all";
+
 export default function BotcampLandingPageComponent() {
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground dark">

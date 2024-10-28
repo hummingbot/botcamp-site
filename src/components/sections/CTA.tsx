@@ -1,5 +1,6 @@
 import { Button } from "@/components/ui/button"
 import Link from "next/link"
+import { COURSES_LINK } from "@/app/page"
 
 export default function CTA() {
   return (
@@ -19,7 +20,7 @@ export default function CTA() {
           </div>
           <div className="space-x-4 mt-6">
             <Button variant="default" size="lg" asChild>
-              <Link href="https://www.botcamp.xyz/slides/all">
+              <Link href={COURSES_LINK}>
                 Explore Courses
               </Link>
             </Button>
