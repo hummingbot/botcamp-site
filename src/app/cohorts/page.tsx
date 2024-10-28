@@ -13,6 +13,7 @@ import Footer from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
 
 const COHORT_LINK = "https://www.botcamp.xyz/event/botcamp-cohort-10-9/register";
+const COHORT_HELIO_LINK = "https://app.hel.io/pay/66ba435d1011b504426d1d0c";
 const COHORT_START_DATE = new Date('2024-11-05');
 
 export default function CohortsPage() {
@@ -20,10 +21,14 @@ export default function CohortsPage() {
     <div className="flex flex-col min-h-screen bg-background text-foreground dark">
       <Header />
       <main className="flex-1 flex flex-col items-center">
-        <CohortHero cohortLink={COHORT_LINK} />
+        <CohortHero cohortLink={COHORT_LINK} helioLink={COHORT_HELIO_LINK} />
         <CohortMetrics />
         <CohortFeatures />
-        <CohortSchedule cohortLink={COHORT_LINK} startDate={COHORT_START_DATE} />
+        <CohortSchedule 
+          cohortLink={COHORT_LINK} 
+          helioLink={COHORT_HELIO_LINK} 
+          startDate={COHORT_START_DATE} 
+        />
         <HummingbotMetrics />
         <CohortInstructors />
         <CohortProjects />
@@ -38,11 +43,21 @@ export default function CohortsPage() {
                 Ready to Learn Professional Market Making?
               </h2>
             </div>
-            <Button variant="default" size="lg" asChild className="mt-4">
-              <a href={COHORT_LINK} target="_blank" rel="noopener noreferrer">
-                Join Botcamp Cohort 10
+            <div className="flex flex-col items-center gap-2">
+              <Button variant="default" size="lg" asChild className="mt-4">
+                <a href={COHORT_LINK} target="_blank" rel="noopener noreferrer">
+                  Join Botcamp Cohort 10
+                </a>
+              </Button>
+              <a 
+                href={COHORT_HELIO_LINK} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-gray-300"
+              >
+                Pay in USDC
               </a>
-            </Button>
+            </div>
           </div>
         </section>
       </main>

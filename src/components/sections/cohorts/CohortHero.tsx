@@ -3,9 +3,10 @@ import CandlesBackground from "@/components/ui/candles-background"
 
 interface CohortHeroProps {
   cohortLink: string;
+  helioLink: string;
 }
 
-export function CohortHero({ cohortLink }: CohortHeroProps) {
+export function CohortHero({ cohortLink, helioLink }: CohortHeroProps) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 xl:py-48 relative">
       <CandlesBackground />
@@ -23,11 +24,19 @@ export function CohortHero({ cohortLink }: CohortHeroProps) {
               </p>
             </div>
             <div className="mt-8">
-              <Button variant="default" size="lg" asChild>
-                <a href={cohortLink}>
-                  Join Cohort 10
+              <Button variant="default" size="lg" asChild className="mt-4">
+                <a href={cohortLink} target="_blank" rel="noopener noreferrer">
+                  Join Botcamp Cohort 10
                 </a>
               </Button>
+              <a 
+                href={helioLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-gray-500 ml-4"
+              >
+                Pay in USDC
+              </a>
             </div>
           </div>
 

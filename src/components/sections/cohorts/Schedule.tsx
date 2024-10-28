@@ -3,10 +3,11 @@ import { Calendar, BookOpen, Users, Award, Terminal, Trophy } from "lucide-react
 
 interface CohortScheduleProps {
   cohortLink: string;
+  helioLink: string;
   startDate: Date;
 }
 
-export default function CohortSchedule({ cohortLink, startDate }: CohortScheduleProps) {
+export default function CohortSchedule({ cohortLink, helioLink, startDate }: CohortScheduleProps) {
   const daysUntilStart = Math.ceil((startDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
   
   // Add legend items before schedule
@@ -209,12 +210,22 @@ export default function CohortSchedule({ cohortLink, startDate }: CohortSchedule
                 : `The next Botcamp cohort starts in ${daysUntilStart} days`
               }
             </h3>
-            <button
-              className="px-8 py-4 bg-primary hover:bg-primary/90 text-black font-semibold rounded-lg text-lg transition-colors"
-              onClick={() => window.open(cohortLink, "_blank")}
-            >
-              Join the Cohort
-            </button>
+            <div className="flex flex-col items-center gap-2">
+              <button
+                className="px-8 py-4 bg-primary hover:bg-secondary text-black font-semibold rounded-lg text-lg transition-colors"
+                onClick={() => window.open(cohortLink, "_blank")}
+              >
+                Join the Cohort
+              </button>
+              <a 
+                href={helioLink} 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="text-sm text-gray-400 hover:text-gray-300"
+              >
+                Pay in USDC
+              </a>
+            </div>
           </div>
         </div>
       </div>

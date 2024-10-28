@@ -1,4 +1,5 @@
-import { Github } from "lucide-react"
+import { Github, Globe } from "lucide-react"
+import { Button } from "@/components/ui/button"
 
 export default function HummingbotMetrics() {
     const metrics = [
@@ -37,15 +38,27 @@ export default function HummingbotMetrics() {
               </div>
             ))}
           </div>
-          <div className="flex justify-center">
-            <a
-              href="https://github.com/hummingbot/hummingbot"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-center px-6 py-3 rounded-lg bg-primary text-black hover:bg-primary/90 transition-colors"
-            >
-              <Github className="w-5 h-5 mr-2" /> Github
-            </a>
+          <div className="flex justify-center gap-4">
+            <Button variant="default" size="lg" asChild>
+              <a
+                href="https://hummingbot.org"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
+              >
+                <Globe className="w-5 h-5 mr-2" /> Website
+              </a>
+            </Button>
+            <Button variant="outline" size="lg" asChild>
+              <a
+                href="https://github.com/hummingbot/hummingbot"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center"
+              >
+                <Github className="w-5 h-5 mr-2" /> Github
+              </a>
+            </Button>
           </div>
         </div>
       </section>

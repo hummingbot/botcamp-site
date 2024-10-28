@@ -21,11 +21,11 @@ export default function FAQ() {
     },
     {
       question: "How much does Botcamp cost?",
-      answer: "Botcamp courses, in-depth tutorials on various types of algo trading strategies, start at $199. Purchasers receive lifetime access to all course content, videos, and quizzes.\n\nBotcamp cohorts, 5-week bootcamps are more expensive due to personalized... Students can receive discounts for registering early and earn back their tuittion by winning challenges."
+      answer: "Botcamp courses start at $200. Course purchasers receive lifetime access to all course videos, challenges, and quizzes. Botcamp cohorts are more expensive due to their hands-on, personalized nature."
     },
     {
-      question: "What have past Botcamp students done afterwards?",
-      answer: "Past Botcamp graduates have:\n\n- Landed a trading job at a crypto market making firm\n- Ran a market making bot for their own token\n- Built a consistently profitable trading strategy\n- Partnered with other Botcamp members to work on projects together\n- Become a mentor in future Botcamp cohorts"
+      question: "How long do I have access to Botcamp content?",
+      answer: "You have lifetime access to the Botcamp platform, including recordings of live sessions and office hours, and access to private Discord channels for support."
     },
     {
       question: "Can I contribute to the Hummingbot open source codebase?",

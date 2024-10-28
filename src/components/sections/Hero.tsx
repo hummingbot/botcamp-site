@@ -2,6 +2,7 @@ import React from 'react';
 import Typewriter from 'typewriter-effect';
 import { Button } from "@/components/ui/button"
 import CandlesBackground from "@/components/ui/candles-background";
+import Link from "next/link";
 
 export default function Hero() {
   return (
@@ -59,11 +60,15 @@ export default function Hero() {
           </div>
 
           <div className="space-x-4 space-y-4">
-            <Button variant="default" size="lg">
-              Explore Courses
+            <Button variant="default" size="lg" asChild>
+              <Link href="https://www.botcamp.xyz/slides/all">
+                Explore Courses
+              </Link>
             </Button>
-            <Button variant="outline" size="lg">
-              Join a Cohort
+            <Button variant="outline" size="lg" asChild>
+              <Link href="/cohorts">
+                Join a Cohort
+              </Link>
             </Button>
           </div>
         </div>
