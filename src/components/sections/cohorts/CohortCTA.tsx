@@ -1,0 +1,36 @@
+import { Button } from "@/components/ui/button"
+
+interface CohortCTAProps {
+    cohortLink: string;
+    helioLink: string;
+  }
+  
+  export default function CohortCTA({ cohortLink, helioLink }: CohortCTAProps) {
+    return (
+      <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative">
+        <div className="absolute inset-0 bg-grid-pattern"></div>
+        <div className="container mx-auto px-4 md:px-6 flex flex-col items-center justify-center gap-8 text-center relative z-10">
+          <div className="space-y-3 text-center">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-white">
+              Ready to Learn Professional Market Making?
+            </h2>
+          </div>
+          <div className="flex flex-col items-center gap-2">
+            <Button variant="default" size="lg" asChild className="mt-4">
+              <a href={cohortLink} target="_blank" rel="noopener noreferrer">
+                Join Botcamp Cohort 10
+              </a>
+            </Button>
+            <a 
+              href={helioLink} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="text-sm text-gray-400 hover:text-gray-300"
+            >
+              Pay in USDC
+            </a>
+          </div>
+        </div>
+      </section>
+    );
+  }
