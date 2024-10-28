@@ -12,7 +12,7 @@ import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
 import { Button } from "@/components/ui/button"
 
-const COHORT_LINK = "https://www.botcamp.xyz/event/botcamp-cohort-10-9/register";
+const COHORT_LINK = "https://courses.botcamp.xyz/event/botcamp-cohort-10-9/register";
 const COHORT_HELIO_LINK = "https://app.hel.io/pay/66ba435d1011b504426d1d0c";
 const COHORT_START_DATE = new Date('2024-11-05');
 
