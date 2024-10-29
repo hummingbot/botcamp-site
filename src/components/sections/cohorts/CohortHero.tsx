@@ -44,7 +44,7 @@ export function CohortHero({ cohortLink, helioLink }: CohortHeroProps) {
           <div className="w-full lg:w-1/2 order-2 lg:order-2 mt-8 lg:mt-0">
             <div className="relative pb-[56.25%] h-0 overflow-hidden rounded-lg">
               <iframe
-                src="https://www.youtube.com/embed/gu77lJqa6Aw"
+                src="https://www.youtube.com/embed/lg8VIO65lVg"
                 frameBorder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowFullScreen
