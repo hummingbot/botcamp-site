@@ -1,4 +1,5 @@
 import { Button } from "@/components/ui/button"
+import { event } from '@/lib/gtag'
 
 interface CohortCTAProps {
     cohortLink: string;
@@ -6,6 +7,22 @@ interface CohortCTAProps {
   }
   
   export default function CohortCTA({ cohortLink, helioLink }: CohortCTAProps) {
+    const handleJoinClick = () => {
+      event({
+        action: 'click',
+        category: 'cohort',
+        label: 'join_cohort_cta'
+      })
+    }
+
+    const handleUSDCClick = () => {
+      event({
+        action: 'click',
+        category: 'payment',
+        label: 'usdc_payment_cta'
+      })
+    }
+
     return (
       <section className="w-full py-12 md:py-24 lg:py-32 bg-black relative">
         <div className="absolute inset-0 bg-grid-pattern"></div>
@@ -16,7 +33,7 @@ interface CohortCTAProps {
             </h2>
           </div>
           <div className="flex flex-col items-center gap-2">
-            <Button variant="default" size="lg" asChild className="mt-4">
+            <Button variant="default" size="lg" asChild className="mt-4" onClick={handleJoinClick}>
               <a href={cohortLink} target="_blank" rel="noopener noreferrer">
                 Join Botcamp Cohort 10
               </a>
@@ -26,6 +43,7 @@ interface CohortCTAProps {
               target="_blank" 
               rel="noopener noreferrer"
               className="text-sm text-gray-400 hover:text-gray-300"
+              onClick={handleUSDCClick}
             >
               Pay in USDC
             </a>

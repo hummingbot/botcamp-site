@@ -12,7 +12,7 @@ import CTA from "@/components/sections/CTA"
 
 const COURSES_LINK = "https://courses.botcamp.xyz/slides/all";
 
-export default function BotcampLandingPageComponent() {
+export default function BotcampLandingPageComponent() {  
   return (
     <div className="flex flex-col min-h-screen bg-background text-foreground dark">
       <Header coursesLink={COURSES_LINK} />
