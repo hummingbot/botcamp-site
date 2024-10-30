@@ -23,8 +23,8 @@ const satoshi = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Botcamp",
-  description: "Learn the Dark Arts of Market Making",
+  title: "Hummingbot Botcamp",
+  description: "Education for crypto market makers and algorithmic traders, taught using the Hummingbot open source framework",
 };
 
 
