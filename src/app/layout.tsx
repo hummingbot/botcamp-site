@@ -32,6 +32,10 @@ export default function RootLayout({
 }: {
   children: React.ReactNode
 }) {
+  if (!process.env.NEXT_PUBLIC_GA_ID) {
+    throw new Error('NEXT_PUBLIC_GA_ID is not defined in environment variables');
+  }
+
   return (
     <html>
       <head>
