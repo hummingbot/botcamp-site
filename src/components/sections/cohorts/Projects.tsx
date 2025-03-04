@@ -32,14 +32,14 @@ export default function CohortProjects() {
       thumbnail: cohort7
     },
     {
-      title: "Cohort 5 - AI Strategy",
+      title: "Cohort 5 - AI Strategy Demo",
       date: "July 2023",
       description: "Directional trading strategy with AI Helper",
       videoUrl: "https://www.youtube.com/watch?v=kjavBd9vvWA",
       thumbnail: cohort5ai
     },
     {
-      title: "Cohort 5 - Statistical Arbitrage",
+      title: "Cohort 5 - Statistical Arbitrage Demo",
       date: "July 2023",
       description: "Automated trading strategies across multiple markets",
       videoUrl: "https://www.youtube.com/watch?v=DyHA8KPheMw",
