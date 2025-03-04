@@ -17,7 +17,7 @@ import { ArrowRight, Calendar, ChevronDown } from "lucide-react"
 
 const COHORT_LINK = "https://courses.botcamp.xyz/event/botcamp-cohort-11-10/register";
 const COHORT_HELIO_LINK = "https://t.me/botcampcohorts";
-const COHORT_START_DATE = new Date('2025-04-08'); // Updated to April 8, 2025
+const COHORT_START_DATE = new Date('2025-04-09'); // Updated to April 8, 2025 + 1 day
 const COURSES_LINK = "https://courses.botcamp.xyz/slides/all";
 const CURRENT_COHORT = 11;
 
