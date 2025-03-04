@@ -215,7 +215,7 @@ export default function CohortSchedule({ cohortLink, helioLink, startDate }: Coh
                 className="px-8 py-4 bg-primary hover:bg-secondary text-black font-semibold rounded-lg text-lg transition-colors"
                 onClick={() => window.open(cohortLink, "_blank")}
               >
-                Join the Cohort
+                Enroll Now
               </button>
               <a 
                 href={helioLink} 
@@ -223,8 +223,11 @@ export default function CohortSchedule({ cohortLink, helioLink, startDate }: Coh
                 rel="noopener noreferrer"
                 className="text-sm text-gray-400 hover:text-gray-300"
               >
-                Pay in USDC
+                Chat in Telegram
               </a>
+              <p className="text-xs text-gray-500 mt-1 max-w-xs text-center">
+                Ask us anything about botcamp, like payment methods, team discounts, and what you'll learn.
+              </p>
             </div>
           </div>
         </div>

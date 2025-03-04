@@ -35,7 +35,7 @@ interface CohortCTAProps {
           <div className="flex flex-col items-center gap-2">
             <Button variant="default" size="lg" asChild className="mt-4" onClick={handleJoinClick}>
               <a href={cohortLink} target="_blank" rel="noopener noreferrer">
-                Join Botcamp Cohort 10
+                Enroll Now
               </a>
             </Button>
             <a 
@@ -45,7 +45,7 @@ interface CohortCTAProps {
               className="text-sm text-gray-400 hover:text-gray-300"
               onClick={handleUSDCClick}
             >
-              Pay in USDC
+              Chat in Telegram
             </a>
           </div>
         </div>

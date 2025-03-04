@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Card, CardHeader, CardContent } from "@/components/ui/card"
-import { Github, Linkedin, Twitter, Users } from "lucide-react"
+import { Github, Linkedin, Twitter, Users, Network } from "lucide-react"
 import mikeImage from "@/images/mike.webp"
 import fedeImage from "@/images/fede.webp"
 import React from 'react'
@@ -28,9 +28,9 @@ export default function CohortInstructors() {
       }
     },
     {
-      name: "Botcamp Mentors",
-      role: "Hummingbot Community",
-      bio: "Attend office hours hosted by experienced algorithmic traders and developers who have built successful trading strategies using Hummingbot.",
+      name: "Botcamp Team",
+      role: "Hummingbot Tech Support",
+      bio: "Access private Discord support channels where the Botcamp team provides personalized assistance with Hummingbot setup, installation, and technical troubleshooting.",
       image: (
         <div className="bg-gray-800 rounded-full p-6">
           <Users className="w-full h-full text-gray-300" strokeWidth={1.5} />
@@ -38,7 +38,7 @@ export default function CohortInstructors() {
       ),
       social: {
       }
-    }
+    },
   ]
 
   return (

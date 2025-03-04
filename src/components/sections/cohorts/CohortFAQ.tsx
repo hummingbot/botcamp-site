@@ -9,7 +9,7 @@ import {
     const faqs = [
       {
         question: "How many live sessions are there in a Botcamp cohort?",
-        answer: "During a 6 week cohort, students get access to 8 online live sessions (60 minutes), 2 or more optional mentor office hour sessions (60 minutes), and the final Demo Day live session (90-120 minutes). All sessions are recorded, transcribed, and posted on the Botcamp platform within 24 hours after each session."
+        answer: "During a 4 week cohort, students get access to 12+ online live sessions (60 minutes), along with the final Demo Day live session (90-120 minutes). All sessions are recorded, transcribed, and posted on the Botcamp platform within 24 hours after each session."
       },
       {
         question: "What's the expected time commitment for a Botcamp cohort?",
@@ -49,11 +49,11 @@ import {
       },
       {
         question: "Does buying a cohort seat include access to Botcamp courses?",
-        answer: "Yes, your Botcamp cohort purchase includes access to 3 introductory courses on algo trading strategies and market making strategies - a $600 value - as well as a private Discord channels for support."
+        answer: "Yes, your Botcamp cohort purchase includes access to 4 introductory courses on algo trading strategies and market making strategies - a $800 value - as well as a private Discord channels for support."
       },
       {
         question: "Can I pay in crypto?",
-        answer: "Yes, you can pay in crypto for Botcamp cohorts. Use the Pay in USDC link or email operations@botcamp.xyz for other options."
+        answer: "Yes, you can pay in crypto for Botcamp cohorts. Chat in Telegram with us to learn more."
       },
     ]
   
