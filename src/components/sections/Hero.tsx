@@ -71,7 +71,7 @@ export default function Hero({ coursesLink }: HeroProps) {
             </Button>
             <Button variant="outline" size="lg" asChild>
               <Link href="/cohorts">
-                Join a Cohort
+                Join Next Cohort
               </Link>
             </Button>
           </div>

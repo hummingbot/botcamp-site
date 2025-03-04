@@ -31,7 +31,7 @@ export default function Cohort10Page() {
         />
         <HummingbotMetrics />
         <CohortInstructors />
-        <CohortProjects showCohortHistory={false} currentCohortNum={CURRENT_COHORT} />
+        <CohortProjects />
         <CohortFAQ />
         <CohortCTA cohortLink={COHORT_LINK} helioLink={COHORT_HELIO_LINK} />
       </main>

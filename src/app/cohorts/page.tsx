@@ -133,12 +133,12 @@ export default function CohortsPage() {
         
         <CohortInstructors />
         
-        {/* Updated CohortProjects with history enabled */}
-        <CohortProjects showCohortHistory={true} currentCohortNum={CURRENT_COHORT} />
+        {/* Projects section */}
+        <CohortProjects />
         
         <CohortFAQ />
         
-        <CohortCTA 
+        <CohortCTA
           cohortLink={COHORT_LINK} 
           helioLink={COHORT_HELIO_LINK} 
         />
