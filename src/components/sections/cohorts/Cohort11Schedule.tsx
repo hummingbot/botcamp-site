@@ -110,7 +110,7 @@ export default function Cohort11Schedule({
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
                     </div>
                     <p className="text-muted-foreground">
-                      Your journey begins with understanding the fundamentals of trading bots. We'll explore order book mechanics including the difference between makers and takers, and how queue priority affects your trades. You'll learn about different exchange types (spot vs. perpetual, centralized vs. decentralized) and gain insights into directional trading strategies that form the basis of algorithmic trading.
+                      Your journey begins with understanding the fundamentals of trading bots. We'll explore order book mechanics including the difference between makers and takers, and how queue priority affects your trades. You'll learn about different exchange types (spot vs. perpetual, centralized vs. decentralized) and gain insights into strategy types like directional trading strategies, market making strategies, and more that form the basis of algorithmic trading.
                     </p>
                   </CardContent>
                 </Card>
@@ -167,7 +167,7 @@ export default function Cohort11Schedule({
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
                     </div>
                     <p className="text-muted-foreground">
-                      This hands-on session focuses on implementing trading strategies through Hummingbot's controller system. You'll work with directional controllers including Bollinger Bands and MACD indicators, and even code a new controller from scratch during the live session. The class also covers market making controllers that operate around mid-price with dynamic spreads, as well as generic controllers for arbitrage and cross-exchange market making.
+                      This hands-on session focuses on implementing advanced trading strategies through Hummingbot's controller system. You'll work with directional controllers including Bollinger Bands and MACD indicators, and even code a new controller from scratch during the live session. The class also covers market making controllers that operate around mid-price with dynamic spreads, as well as generic controllers for arbitrage and cross-exchange market making.
                     </p>
                   </CardContent>
                 </Card>
@@ -250,7 +250,7 @@ export default function Cohort11Schedule({
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
                     </div>
                     <p className="text-muted-foreground">
-                      Transition from technical concepts to business applications by exploring market maker business models including proprietary trading, market making-as-a-service, and token-based financial products. Learn to identify lucrative opportunities and potential clients while mastering the art of scaling your operations through team growth and portfolio management. The session concludes with critical operational security practices to protect your assets and trading systems.
+                      Transition from technical concepts to business applications by exploring market maker business models including liquidity mining,market making-as-a-service, and token loans with embedded options. Learn to identify lucrative opportunities and potential pitfalls while mastering the art of scaling your operations through bot management. The session concludes with critical operational security practices to protect your assets and trading systems.
                     </p>
                   </CardContent>
                 </Card>
@@ -269,7 +269,7 @@ export default function Cohort11Schedule({
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
                     </div>
                     <p className="text-muted-foreground">
-                      Prepare for real-world deployment with a deep dive into the Backend API architecture and production setup. You'll learn how to securely deploy the full stack of Backend API, Dashboard, and Broker services, including security best practices. The session covers deploying bots on cloud providers and using the Quants-Lab to interact with the Backend API for managing configurations, monitoring account balances, and controlling bot operations.
+                      Prepare for real-world deployment with a deep dive into setting up Hummingbot for production use. You'll learn how to securely deploy the full stack of Backend API, Dashboard, and Broker services, including security best practices. The session covers deploying bots on cloud providers and using the Quants-Lab research repository to interact with the Backend API for managing configurations, monitoring account balances, and controlling bot operations.
                     </p>
                   </CardContent>
                 </Card>

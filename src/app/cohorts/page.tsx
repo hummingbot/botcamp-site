@@ -95,7 +95,7 @@ export default function CohortsPage() {
                 <Button asChild size="lg" variant="outline" className="text-lg border-white/40 
                                                                      bg-background/20 backdrop-blur-sm 
                                                                      text-white hover:bg-background/30
-                                                                     hover:border-white/60">
+                                                                     hover:border-white/60 hover:text-primary">
                   <Link href={COHORT_HELIO_LINK} target="_blank">
                     Chat in Telegram
                   </Link>
