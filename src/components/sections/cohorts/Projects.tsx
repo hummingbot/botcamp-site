@@ -2,8 +2,11 @@ import { Card, CardContent } from "@/components/ui/card"
 import { Play } from "lucide-react"
 import Image from "next/image"
 import cohort4 from "@/images/thumbs/cohort-4.jpg"
+import cohort5ai from "@/images/thumbs/cohort5-ai.webp"
+import cohort5statarb from "@/images/thumbs/cohort5-sa.webp"
 import cohort7 from "@/images/thumbs/cohort-7.webp"
 import cohort9 from "@/images/thumbs/cohort-9.jpg"
+import cohort10 from "@/images/thumbs/cohort-10.jpg"
 
 export default function CohortProjects() {
   const demodays = [
@@ -11,8 +14,8 @@ export default function CohortProjects() {
       title: "Cohort 10 Demo Day",
       date: "November 2024",
       description: "Latest graduates showcasing innovative trading strategies",
-      videoUrl: "https://www.youtube.com/watch?v=b2BL-gCqKYI",
-      thumbnail: cohort9
+      videoUrl: "https://youtu.be/FVtaqrpzhU4",
+      thumbnail: cohort10
     },
     {
       title: "Cohort 9 Demo Day",
@@ -22,61 +25,33 @@ export default function CohortProjects() {
       thumbnail: cohort9
     },
     {
-      title: "Cohort 8 Demo Day",
+      title: "Cohort 7 Demo Day",
       date: "July 2024",
       description: "Advanced market making and arbitrage trading strategies",
       videoUrl: "https://www.youtube.com/watch?v=TAulqoSenmk",
       thumbnail: cohort7
     },
     {
-      title: "Cohort 7 Demo Day",
-      date: "May 2024",
-      description: "Momentum, liquidation sniper, and market making strategies",
-      videoUrl: "https://www.youtube.com/watch?v=TAulqoSenmk",
-      thumbnail: cohort7
+      title: "Cohort 5 - AI Strategy",
+      date: "July 2023",
+      description: "Directional trading strategy with AI Helper",
+      videoUrl: "https://www.youtube.com/watch?v=kjavBd9vvWA",
+      thumbnail: cohort5ai
     },
     {
-      title: "Cohort 6 Demo Day",
-      date: "December 2023",
+      title: "Cohort 5 - Statistical Arbitrage",
+      date: "July 2023",
+      description: "Automated trading strategies across multiple markets",
+      videoUrl: "https://www.youtube.com/watch?v=DyHA8KPheMw",
+      thumbnail: cohort5statarb
+    },
+    {
+      title: "Cohort 4 Demo Day",
+      date: "April 2023",
       description: "Automated trading strategies across multiple markets",
       videoUrl: "https://www.youtube.com/watch?v=mjeTm9MQz9c",
       thumbnail: cohort4
     },
-    {
-      title: "Cohort 5 Demo Day",
-      date: "August 2023",
-      description: "Cross-exchange arbitrage and liquidity providing strategies",
-      videoUrl: "https://www.youtube.com/watch?v=mjeTm9MQz9c",
-      thumbnail: cohort9
-    },
-    {
-      title: "Cohort 4 Demo Day",
-      date: "May 2023",
-      description: "Index portfolio rebalancing and spot-perp arbitrage strategies",
-      videoUrl: "https://www.youtube.com/watch?v=mjeTm9MQz9c",
-      thumbnail: cohort4
-    },
-    {
-      title: "Cohort 3 Demo Day",
-      date: "December 2022",
-      description: "AMM bridging and market making strategies",
-      videoUrl: "https://www.youtube.com/watch?v=mjeTm9MQz9c",
-      thumbnail: cohort7
-    },
-    {
-      title: "Cohort 2 Demo Day",
-      date: "August 2022",
-      description: "Cross-chain arbitrage and liquidity management strategies",
-      videoUrl: "https://www.youtube.com/watch?v=mjeTm9MQz9c",
-      thumbnail: cohort9
-    },
-    {
-      title: "Cohort 1 Demo Day",
-      date: "April 2022",
-      description: "Inaugural cohort's innovative market making strategies",
-      videoUrl: "https://www.youtube.com/watch?v=mjeTm9MQz9c",
-      thumbnail: cohort4
-    }
   ]
 
   return (
