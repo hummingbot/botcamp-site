@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import { Card, CardHeader, CardContent } from "@/components/ui/card"
-import { Github, Linkedin, Twitter, Users, Network } from "lucide-react"
+import { Github, Linkedin, Twitter, Users } from "lucide-react"
 import mikeImage from "@/images/mike.webp"
 import fedeImage from "@/images/fede.webp"
 import React from 'react'

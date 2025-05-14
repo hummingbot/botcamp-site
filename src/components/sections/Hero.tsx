@@ -46,20 +46,79 @@ export default function Hero({ coursesLink }: HeroProps) {
               </span>
             </h1>
             <p className="mx-auto max-w-[700px] text-gray-300 md:text-xl">
-              Education for crypto market makers and algorithmic traders, taught using the Hummingbot open source framework
+              Education for crypto market makers and algorithmic traders, featuring student-built trading strategies using the Hummingbot open source framework
             </p>
           </div>
-          
-          {/* Updated YouTube Video Component */}
-          <div className="mt-12 w-full max-w-3xl mx-auto">
-            <div className="relative pb-[56.25%] h-0 overflow-hidden">
-              <iframe
-                src="https://www.youtube.com/embed/jsD6Sz-trQc"
-                frameBorder="0"
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowFullScreen
-                className="absolute top-0 left-0 w-full h-full"
-              ></iframe>
+
+          {/* Student Strategy Videos Grid */}
+          <div className="mt-12 w-full max-w-5xl mx-auto">
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+              {/* Strategy 1 */}
+              <div className="bg-black/30 backdrop-blur-sm rounded-lg overflow-hidden border border-gray-800 hover:border-primary/50 transition-colors">
+                <div className="relative pb-[56.25%] h-0 overflow-hidden">
+                  <iframe
+                    src="https://www.youtube.com/embed/asdg8YnFvF8"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                  ></iframe>
+                </div>
+                <div className="p-3">
+                  <h4 className="font-medium text-white">
+                  Leader-Follower Directional Divergence</h4>
+                  <p className="text-sm text-gray-400">xNikos, Cohort 11</p>
+                </div>
+              </div>
+
+              {/* Strategy 2 */}
+              <div className="bg-black/30 backdrop-blur-sm rounded-lg overflow-hidden border border-gray-800 hover:border-primary/50 transition-colors">
+                <div className="relative pb-[56.25%] h-0 overflow-hidden">
+                  <iframe
+                    src="https://www.youtube.com/embed/n4UMTY2_j2U"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                  ></iframe>
+                </div>
+                <div className="p-3">
+                  <h4 className="font-medium text-white">HedgeDOGE</h4>
+                  <p className="text-sm text-gray-400">Jonathan Wagner, Cohort 11</p>
+                </div>
+              </div>
+
+              {/* Strategy 3 */}
+              <div className="bg-black/30 backdrop-blur-sm rounded-lg overflow-hidden border border-gray-800 hover:border-primary/50 transition-colors">
+                <div className="relative pb-[56.25%] h-0 overflow-hidden">
+                  <iframe
+                    src="https://www.youtube.com/embed/b2BL-gCqKYI"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                  ></iframe>
+                </div>
+                <div className="p-3">
+                  <h4 className="font-medium text-white">Cohort 9 Demo Day</h4>
+                </div>
+              </div>
+
+              {/* Strategy 4 */}
+              <div className="bg-black/30 backdrop-blur-sm rounded-lg overflow-hidden border border-gray-800 hover:border-primary/50 transition-colors">
+                <div className="relative pb-[56.25%] h-0 overflow-hidden">
+                  <iframe
+                    src="https://www.youtube.com/embed/TAulqoSenmk"
+                    frameBorder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                    allowFullScreen
+                    className="absolute top-0 left-0 w-full h-full"
+                  ></iframe>
+                </div>
+                <div className="p-3">
+                  <h4 className="font-medium text-white">Cohort 7 Demo Day</h4>
+                </div>
+              </div>
             </div>
           </div>
 

@@ -6,25 +6,29 @@ import Link from "next/link"
 import { Badge } from "@/components/ui/badge"
 import { Award, Check } from "lucide-react"
 
-interface Cohort11ScheduleProps {
+interface Cohort12ScheduleProps {
   cohortLink: string
   helioLink: string
   startDate?: Date
 }
 
-export default function Cohort11Schedule({
+export default function Cohort12Schedule({
   cohortLink,
   helioLink
-}: Cohort11ScheduleProps) {
+}: Cohort12ScheduleProps) {
   return (
     <section className="w-full py-12 md:py-24 lg:py-32 bg-gradient-to-b from-background to-muted/50" id="schedule">
       <div className="container px-4 md:px-6">
         <div className="flex flex-col items-center justify-center space-y-6 text-center mb-12">
-          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-4">Botcamp Cohort 11 Schedule</h2>
+          <h2 className="text-3xl font-bold tracking-tighter sm:text-5xl mb-4">Botcamp Cohort 12 Schedule</h2>
           
           <div className="max-w-[800px] prose prose-zinc dark:prose-invert">
             <p className="text-muted-foreground text-lg">
               A Botcamp cohort is an intensive 4-week bootcamp that teaches participants the theory, business, and technical aspects of market making. By the end of the cohort, students will have designed and coded their own custom market making strategy and earned an official Hummingbot Certification.
+            </p>
+            
+            <p className="text-muted-foreground mt-4">
+              Each session runs for 1.5 to 2 hours with interactive Q&A, and participants receive <span className="font-semibold text-primary">lifetime access</span> to all session recordings, code samples, and course materials.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
@@ -103,7 +107,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">📖</span>
                         <div>
                           <h4 className="font-bold text-lg">Introduction to Market Making</h4>
-                          <p className="text-sm text-muted-foreground">Tuesday April 8, 2025</p>
+                          <p className="text-sm text-muted-foreground">Tuesday September 9, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
@@ -122,7 +126,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">👨‍💻</span>
                         <div>
                           <h4 className="font-bold text-lg">The Hummingbot Open Source Framework</h4>
-                          <p className="text-sm text-muted-foreground">Wednesday April 9, 2025</p>
+                          <p className="text-sm text-muted-foreground">Wednesday September 10, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
@@ -141,7 +145,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">📖</span>
                         <div>
                           <h4 className="font-bold text-lg">Pure Market Making Strategies</h4>
-                          <p className="text-sm text-muted-foreground">Thursday April 10, 2025</p>
+                          <p className="text-sm text-muted-foreground">Thursday September 11, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
@@ -160,7 +164,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">👨‍💻</span>
                         <div>
                           <h4 className="font-bold text-lg">StrategyV2 Controllers</h4>
-                          <p className="text-sm text-muted-foreground">Friday April 11, 2025</p>
+                          <p className="text-sm text-muted-foreground">Friday September 12, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
@@ -205,7 +209,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">📖</span>
                         <div>
                           <h4 className="font-bold text-lg">Advanced Market Making Strategies</h4>
-                          <p className="text-sm text-muted-foreground">Tuesday April 15, 2025</p>
+                          <p className="text-sm text-muted-foreground">Tuesday September 16, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
@@ -224,7 +228,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">👨‍💻</span>
                         <div>
                           <h4 className="font-bold text-lg">Coding Custom Strategies</h4>
-                          <p className="text-sm text-muted-foreground">Wednesday April 16, 2025</p>
+                          <p className="text-sm text-muted-foreground">Wednesday September 17, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
@@ -243,7 +247,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">📖</span>
                         <div>
                           <h4 className="font-bold text-lg">The Business of Market Making</h4>
-                          <p className="text-sm text-muted-foreground">Thursday April 17, 2025</p>
+                          <p className="text-sm text-muted-foreground">Thursday September 18, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
@@ -262,7 +266,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">👨‍💻</span>
                         <div>
                           <h4 className="font-bold text-lg">Running Hummingbot in Production</h4>
-                          <p className="text-sm text-muted-foreground">Friday April 18, 2025</p>
+                          <p className="text-sm text-muted-foreground">Friday September 19, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
@@ -314,7 +318,7 @@ export default function Cohort11Schedule({
                           <span className="text-lg text-primary">🙋</span>
                           <div>
                             <h5 className="font-medium">Office Hours with Mike</h5>
-                            <p className="text-sm text-muted-foreground">Tuesday April 22, 2025</p>
+                            <p className="text-sm text-muted-foreground">Tuesday September 23, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -324,7 +328,7 @@ export default function Cohort11Schedule({
                           <span className="text-lg text-primary">🙋</span>
                           <div>
                             <h5 className="font-medium">Office Hours with Fede</h5>
-                            <p className="text-sm text-muted-foreground">Wednesday April 23, 2025</p>
+                            <p className="text-sm text-muted-foreground">Wednesday September 24, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -334,7 +338,7 @@ export default function Cohort11Schedule({
                           <span className="text-lg text-primary">🙋</span>
                           <div>
                             <h5 className="font-medium">Office Hours with Mike</h5>
-                            <p className="text-sm text-muted-foreground">Thursday April 24, 2025</p>
+                            <p className="text-sm text-muted-foreground">Thursday September 25, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -344,7 +348,7 @@ export default function Cohort11Schedule({
                           <span className="text-lg text-primary">🙋</span>
                           <div>
                             <h5 className="font-medium">Office Hours with Fede</h5>
-                            <p className="text-sm text-muted-foreground">Friday April 25, 2025</p>
+                            <p className="text-sm text-muted-foreground">Friday September 26, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -382,7 +386,7 @@ export default function Cohort11Schedule({
                         <span className="text-xl text-primary">🥳</span>
                         <div>
                           <h4 className="font-bold text-lg">Demo Day</h4>
-                          <p className="text-sm text-muted-foreground">Tuesday April 29, 2025</p>
+                          <p className="text-sm text-muted-foreground">Tuesday September 30, 2025</p>
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
@@ -440,7 +444,7 @@ export default function Cohort11Schedule({
           <div className="bg-card rounded-xl shadow-lg p-8 border">
             <h3 className="text-2xl font-bold mb-4 text-center">Ready to transform your trading skills?</h3>
             <p className="text-muted-foreground mb-6 text-center">
-              Join Botcamp Cohort 11 and learn professional market making.
+              Join Botcamp Cohort 12 and learn professional market making.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 justify-center">
               <Button asChild size="lg" className="w-full">
@@ -459,4 +463,4 @@ export default function Cohort11Schedule({
       </div>
     </section>
   )
-} 
+}

@@ -1,14 +1,16 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card"
-import { Calendar, Clock, Users } from "lucide-react"
+import { Clock } from "lucide-react"
 
 interface WorkshopScheduleProps {
   workshopLink: string;
-  helioLink: string;
-  startDate: Date;
+  helioLink?: string;
+  startDate?: Date;
 }
 
-export default function WorkshopSchedule({ workshopLink, helioLink, startDate }: WorkshopScheduleProps) {
-  const daysUntilStart = Math.ceil((startDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
+export default function WorkshopSchedule({ workshopLink }: WorkshopScheduleProps) {
+  // Using a fixed date for calculation
+  const fixedStartDate = new Date('2025-05-01');
+  const daysUntilStart = Math.ceil((fixedStartDate.getTime() - new Date().getTime()) / (1000 * 60 * 60 * 24))
 
   const schedule = [
     {
@@ -61,10 +63,10 @@ export default function WorkshopSchedule({ workshopLink, helioLink, startDate }:
             Workshop Schedule
           </h2>
           <p className="text-xl text-primary text-center mb-12">
-            {new Date(startDate).toLocaleDateString('en-US', { 
-              month: 'long', 
-              day: 'numeric', 
-              year: 'numeric' 
+            {fixedStartDate.toLocaleDateString('en-US', {
+              month: 'long',
+              day: 'numeric',
+              year: 'numeric'
             })}
             {daysUntilStart > 0 && (
               <span className="ml-2 text-gray-400">

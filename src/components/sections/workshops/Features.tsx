@@ -1,7 +1,5 @@
 import { Card, CardHeader, CardContent, CardTitle } from "@/components/ui/card"
 import { Video, Users, Code, BookOpen } from "lucide-react"
-import Image from "next/image"
-import workshopImage from "@/images/live-session.webp"
 
 const getIconColor = (index: number) => {
   switch (index % 3) {
