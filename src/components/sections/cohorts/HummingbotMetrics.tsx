@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button"
 export default function HummingbotMetrics() {
     const metrics = [
       {
-        value: "$34 billion",
+        value: "$25 billion",
         description: "Last 12M Reported Trade Volume"
       },
       {

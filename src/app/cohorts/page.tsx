@@ -7,6 +7,7 @@ import CohortInstructors from "@/components/sections/cohorts/Instructors"
 import CohortProjects from "@/components/sections/cohorts/Projects"
 import CohortFAQ from "@/components/sections/cohorts/CohortFAQ"
 import HummingbotMetrics from "@/components/sections/cohorts/HummingbotMetrics"
+import WhatsNew from "@/components/sections/cohorts/WhatsNew"
 import Header from "@/components/layout/Header"
 import Footer from "@/components/layout/Footer"
 import CohortCTA from "@/components/sections/cohorts/CohortCTA"
@@ -106,7 +107,7 @@ export default function CohortsPage() {
               {/* Description with more transparent background for better candle visibility */}
               <p className="mx-auto max-w-[700px] text-lg text-white md:text-xl bg-background/10 
                           backdrop-blur-sm px-4 py-2 rounded-lg drop-shadow-md">
-                Join our next online bootcamp starting {COHORT_START_DATE.toLocaleDateString('en-US', { month: 'long', day: 'numeric', year: 'numeric' })} and learn to build, deploy, and profit from crypto market making strategies.
+                Join our next online bootcamp starting September 2025 and learn to build, deploy, and profit from crypto market making strategies.
               </p>
               
               <div className="flex flex-col sm:flex-row gap-4 min-[400px]:items-center justify-center mt-2">
@@ -156,20 +157,8 @@ export default function CohortsPage() {
           </div>
         </section>
 
-        <CohortFeatures />
-        
-        <div id="schedule">
-          <Cohort12Schedule
-            cohortLink={COHORT_LINK}
-            helioLink={COHORT_HELIO_LINK}
-            startDate={COHORT_START_DATE}
-          />
-        </div>
-
-        <HummingbotMetrics />
-
         {/* Info Session Video Section */}
-        <section className="w-full py-12 md:py-24 bg-gradient-to-b from-background/90 to-background/70 relative">
+        <section className="w-full py-12 md:py-24 bg-gradient-to-b from-muted/20 to-background relative">
           <div className="container px-4 md:px-6 mx-auto max-w-5xl">
             <div className="text-center mb-12">
               <div className="inline-block rounded-lg bg-primary/20 px-3 py-1 text-sm text-primary-foreground mb-6">
@@ -184,7 +173,7 @@ export default function CohortsPage() {
             <div className="relative mx-auto overflow-hidden rounded-xl border border-primary/20 shadow-xl bg-black/50">
               <div className="aspect-video w-full">
                 <iframe
-                  src="https://www.youtube.com/embed/kIIzCkt4-xQ"
+                  src="https://www.youtube.com/embed/n2_0mHHn5oI"
                   className="w-full h-full"
                   title="Botcamp Cohort Info Session"
                   frameBorder="0"
@@ -193,19 +182,22 @@ export default function CohortsPage() {
                 ></iframe>
               </div>
             </div>
-
-            <div className="mt-8 text-center">
-              <p className="text-sm text-muted-foreground mb-4">
-                Still have questions? Join our Telegram group or contact us directly for more information.
-              </p>
-              <Button asChild variant="outline" size="lg">
-                <Link href={COHORT_HELIO_LINK} target="_blank">
-                  Chat with Us
-                </Link>
-              </Button>
-            </div>
           </div>
         </section>
+
+        <WhatsNew />
+
+        <CohortFeatures />
+        
+        <div id="schedule">
+          <Cohort12Schedule
+            cohortLink={COHORT_LINK}
+            helioLink={COHORT_HELIO_LINK}
+            startDate={COHORT_START_DATE}
+          />
+        </div>
+
+        <HummingbotMetrics />
 
         {/* Cohort Metrics Section */}
         <section className="w-full py-12 md:py-24 bg-gradient-to-b from-background to-muted/50">

@@ -24,11 +24,7 @@ export default function Cohort12Schedule({
           
           <div className="max-w-[800px] prose prose-zinc dark:prose-invert">
             <p className="text-muted-foreground text-lg">
-              A Botcamp cohort is an intensive 4-week bootcamp that teaches participants the theory, business, and technical aspects of market making. By the end of the cohort, students will have designed and coded their own custom market making strategy and earned an official Hummingbot Certification.
-            </p>
-            
-            <p className="text-muted-foreground mt-4">
-              Each session runs for 1.5 to 2 hours with interactive Q&A, and participants receive <span className="font-semibold text-primary">lifetime access</span> to all session recordings, code samples, and course materials.
+              Each session runs for 1-2 hours with interactive Q&A, and participants receive <span className="font-semibold text-primary">lifetime access</span> to all session recordings, code samples, and course materials.
             </p>
             
             <div className="grid grid-cols-1 md:grid-cols-3 gap-6 my-8">
@@ -83,9 +79,16 @@ export default function Cohort12Schedule({
                       <h4 className="font-bold text-lg">Prework</h4>
                     </div>
                   </div>
-                  <p className="text-muted-foreground">
-                    Begin your journey by completing the Intro to Algo Trading course, which will establish the foundational knowledge needed for the bootcamp. The course includes hands-on coding challenges to get you comfortable with the basics of algorithmic trading before the live sessions begin.
+                  <p className="text-muted-foreground mb-4">
+                    Starting one week before the cohort begins, you'll receive premium support from the Botcamp team to ensure you're fully prepared. This preparation week includes guided installation and setup of all required tools, along with foundational coursework to establish the knowledge needed for the bootcamp.
                   </p>
+                  <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                    <li>Go through the <a href="https://courses.botcamp.xyz/slides/intro-to-algo-trading-1" target="_blank" rel="noopener noreferrer" className="text-primary hover:text-primary/80 underline">Intro to Algo Trading</a> course and code the challenges</li>
+                    <li>Install Hummingbot client (with Botcamp team support)</li>
+                    <li>Install Gateway (with Botcamp team support)</li>
+                    <li>Install Deploy Repo (Dashboard + Hummingbot API) (with Botcamp team support)</li>
+                    <li>Connect credentials and validate that you can see balances / run strategies</li>
+                  </ul>
                 </CardContent>
               </Card>
             </div>
@@ -107,14 +110,20 @@ export default function Cohort12Schedule({
                         <span className="text-xl text-primary">📖</span>
                         <div>
                           <h4 className="font-bold text-lg">Introduction to Market Making</h4>
-                          <p className="text-sm text-muted-foreground">Tuesday September 9, 2025</p>
+                          <p className="text-sm text-muted-foreground">Tuesday Sept 9, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      Your journey begins with understanding the fundamentals of trading bots. We'll explore order book mechanics including the difference between makers and takers, and how queue priority affects your trades. You'll learn about different exchange types (spot vs. perpetual, centralized vs. decentralized) and gain insights into strategy types like directional trading strategies, market making strategies, and more that form the basis of algorithmic trading.
+                    <p className="text-muted-foreground mb-4">
+                      Your journey begins with understanding the fundamentals of market making. We'll explore:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>What is market making?</li>
+                      <li>Order book mechanics - Makers vs Takers, Queue Priority</li>
+                      <li>Exchange types - Spot vs Perpetual, CEX vs DEX</li>
+                      <li>Types of trading strategies</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -126,14 +135,21 @@ export default function Cohort12Schedule({
                         <span className="text-xl text-primary">👨‍💻</span>
                         <div>
                           <h4 className="font-bold text-lg">The Hummingbot Open Source Framework</h4>
-                          <p className="text-sm text-muted-foreground">Wednesday September 10, 2025</p>
+                          <p className="text-sm text-muted-foreground">Wednesday Sept 10, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      Dive into the technical architecture of Hummingbot with a comprehensive overview of the framework including core components, connector design, strategy implementation, and complementary services. You'll set up your development environment and learn scripting basics such as accessing order books, retrieving candle data, executing trades, and handling events. The session concludes with an introduction to the powerful StrategyV2 framework, covering executors and controllers.
+                    <p className="text-muted-foreground mb-4">
+                      Dive into the technical architecture of Hummingbot:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Hummingbot framework overview - Core architecture, Connectors design, Strategy design</li>
+                      <li>Complementary services (Dashboard, Hummingbot-API, Broker)</li>
+                      <li>Environment setup (debug + autostart)</li>
+                      <li>Scripts basics - Accessing the OrderBook, Getting Candles, Executing trades, Events</li>
+                      <li>Introduction to the StrategyV2 framework - Executors and Controllers</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -145,14 +161,20 @@ export default function Cohort12Schedule({
                         <span className="text-xl text-primary">📖</span>
                         <div>
                           <h4 className="font-bold text-lg">Pure Market Making Strategies</h4>
-                          <p className="text-sm text-muted-foreground">Thursday September 11, 2025</p>
+                          <p className="text-sm text-muted-foreground">Thurs Sept 11, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      Explore the concept of market making in depth, learning how to select ideal markets for your strategies. You'll study the influential Avellaneda & Stoikov paper that forms the theoretical foundation for many modern market making approaches. The session covers essential aspects of measuring profitability and implementing risk management techniques to protect your capital while maximizing returns.
+                    <p className="text-muted-foreground mb-4">
+                      Explore pure market making strategies in depth:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>What is market making?</li>
+                      <li>Running Simple Market Making Strategy</li>
+                      <li>Avellaneda & Stoikov paper</li>
+                      <li>PMM Controller</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -164,14 +186,19 @@ export default function Cohort12Schedule({
                         <span className="text-xl text-primary">👨‍💻</span>
                         <div>
                           <h4 className="font-bold text-lg">StrategyV2 Controllers</h4>
-                          <p className="text-sm text-muted-foreground">Friday September 12, 2025</p>
+                          <p className="text-sm text-muted-foreground">Friday Sept 12, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      This hands-on session focuses on implementing advanced trading strategies through Hummingbot's controller system. You'll work with directional controllers including Bollinger Bands and MACD indicators, and even code a new controller from scratch during the live session. The class also covers market making controllers that operate around mid-price with dynamic spreads, as well as generic controllers for arbitrage and cross-exchange market making.
+                    <p className="text-muted-foreground mb-4">
+                      This hands-on session focuses on implementing StrategyV2 controllers:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Directional controllers - Bollinger, MACD BB, Coding a new one live</li>
+                      <li>Market making controllers - Market Making around mid-price, Introducing price shift and dynamic spreads</li>
+                      <li>Generic controllers - Arbitrage, XEMM</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -184,8 +211,17 @@ export default function Cohort12Schedule({
                         <h4 className="font-bold text-lg">Week 1 Homework</h4>
                       </div>
                     </div>
-                    <p className="text-muted-foreground">
-                      Choose a strategy type as your focus area and complete the corresponding course materials and coding challenges. Begin designing your own trading strategy using the provided Design Template, laying the groundwork for your final project.
+                    <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                      <li>Pick a strategy type and go through the course and code the challenges
+                        <ul className="list-disc list-inside ml-6 mt-1">
+                          <li>Market Making Strategies</li>
+                          <li>Directional strategies and V2 framework</li>
+                        </ul>
+                      </li>
+                      <li>Design your strategy with the Design Template</li>
+                    </ul>
+                    <p className="text-muted-foreground text-sm mt-4">
+                      <strong>Additional tasks:</strong> Install Hummingbot and add API keys, Go through initial 2 courses (Intro to Algo Trading, Market Making), Run V2 PMM Controller, Start Designing Your Strategy
                     </p>
                   </CardContent>
                 </Card>
@@ -208,15 +244,21 @@ export default function Cohort12Schedule({
                       <div className="flex items-center gap-3">
                         <span className="text-xl text-primary">📖</span>
                         <div>
-                          <h4 className="font-bold text-lg">Advanced Market Making Strategies</h4>
-                          <p className="text-sm text-muted-foreground">Tuesday September 16, 2025</p>
+                          <h4 className="font-bold text-lg">DEX Market Making Strategies</h4>
+                          <p className="text-sm text-muted-foreground">Tues Sept 16, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Theory</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      Elevate your trading expertise by exploring sophisticated strategies including arbitrage, cross-exchange market making, and grid trading approaches. This session will help you develop the critical thinking needed to select the optimal strategy for different market conditions and trading objectives, giving you a comprehensive toolkit for algorithmic trading.
+                    <p className="text-muted-foreground mb-4">
+                      Explore decentralized exchange (DEX) strategies:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Strategy selection</li>
+                      <li>Blockchain/DEX Basics</li>
+                      <li>DEX Arbitrage strategies</li>
+                      <li>DEX LP strategies</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -228,14 +270,19 @@ export default function Cohort12Schedule({
                         <span className="text-xl text-primary">👨‍💻</span>
                         <div>
                           <h4 className="font-bold text-lg">Coding Custom Strategies</h4>
-                          <p className="text-sm text-muted-foreground">Wednesday September 17, 2025</p>
+                          <p className="text-sm text-muted-foreground">Wed Sept 17, 2025</p>
                         </div>
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      Enhance your trading algorithms with practical coding exercises to add multi-timeframe support to directional strategies. You'll develop a statistical arbitrage controller from scratch and learn how to create configurations that run multiple controllers within the same bot instance, maximizing efficiency and creating sophisticated trading systems.
+                    <p className="text-muted-foreground mb-4">
+                      Enhance your trading algorithms with advanced coding techniques:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Add multi-timeframe support to a directional strategy</li>
+                      <li>Coding a statistical arbitrage controller</li>
+                      <li>Creating configs and running multiple controllers in the same bot</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -246,15 +293,26 @@ export default function Cohort12Schedule({
                       <div className="flex items-center gap-3">
                         <span className="text-xl text-primary">📖</span>
                         <div>
-                          <h4 className="font-bold text-lg">The Business of Market Making</h4>
-                          <p className="text-sm text-muted-foreground">Thursday September 18, 2025</p>
+                          <h4 className="font-bold text-lg">Running Hummingbot DEX Strategies</h4>
+                          <p className="text-sm text-muted-foreground">Thurs Sept 18, 2025</p>
                         </div>
                       </div>
-                      <Badge variant="outline" className="bg-primary/5">Theory</Badge>
+                      <Badge variant="outline" className="bg-primary/5">Technical</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      Transition from technical concepts to business applications by exploring market maker business models including liquidity mining,market making-as-a-service, and token loans with embedded options. Learn to identify lucrative opportunities and potential pitfalls while mastering the art of scaling your operations through bot management. The session concludes with critical operational security practices to protect your assets and trading systems.
+                    <p className="text-muted-foreground mb-4">
+                      Learn to run Hummingbot with decentralized exchange strategies:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Example scripts
+                        <ul className="list-disc list-inside ml-6 mt-1">
+                          <li>AMM Data Feed</li>
+                          <li>AMM Trade</li>
+                          <li>LP Management</li>
+                          <li>Arbitrage Controller</li>
+                        </ul>
+                      </li>
+                      <li>More complex DEX strategies</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -271,9 +329,15 @@ export default function Cohort12Schedule({
                       </div>
                       <Badge variant="outline" className="bg-primary/5">Technical</Badge>
                     </div>
-                    <p className="text-muted-foreground">
-                      Prepare for real-world deployment with a deep dive into setting up Hummingbot for production use. You'll learn how to securely deploy the full stack of Backend API, Dashboard, and Broker services, including security best practices. The session covers deploying bots on cloud providers and using the Quants-Lab research repository to interact with the Backend API for managing configurations, monitoring account balances, and controlling bot operations.
+                    <p className="text-muted-foreground mb-4">
+                      Prepare for real-world deployment:
                     </p>
+                    <ul className="list-disc list-inside space-y-1 text-sm text-muted-foreground">
+                      <li>Hummingbot API architecture</li>
+                      <li>Deployment - Security overview</li>
+                      <li>Deploying HB API on cloud providers</li>
+                      <li>Interacting with HB API from Quants-Lab - Configs, Account balances, Deploying controllers, Stopping controllers</li>
+                    </ul>
                   </CardContent>
                 </Card>
 
@@ -286,9 +350,11 @@ export default function Cohort12Schedule({
                         <h4 className="font-bold text-lg">Week 2 Homework</h4>
                       </div>
                     </div>
-                    <p className="text-muted-foreground">
-                      Complete your strategy design template and begin implementing your custom controller. Analyze the notebooks in the Hummingbot quants-lab repository to improve your strategy's analytical foundation. Set up your production environment and deploy a bot running at least three different controller configurations to gain practical deployment experience.
-                    </p>
+                    <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                      <li>Finish the design template and start implementing your controller</li>
+                      <li>Analyze the notebooks of `hummingbot/quants-lab` and ask any questions that will help you improve the analysis of your controller</li>
+                      <li>Set up your production server and deploy a bot with 3+ controller configs</li>
+                    </ul>
                   </CardContent>
                 </Card>
               </div>
@@ -317,8 +383,8 @@ export default function Cohort12Schedule({
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-lg text-primary">🙋</span>
                           <div>
-                            <h5 className="font-medium">Office Hours with Mike</h5>
-                            <p className="text-sm text-muted-foreground">Tuesday September 23, 2025</p>
+                            <h5 className="font-medium">Hummingbot Advanced Technical + Wrap-Up (Fede)</h5>
+                            <p className="text-sm text-muted-foreground">Tues Sept 23, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -327,8 +393,8 @@ export default function Cohort12Schedule({
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-lg text-primary">🙋</span>
                           <div>
-                            <h5 className="font-medium">Office Hours with Fede</h5>
-                            <p className="text-sm text-muted-foreground">Wednesday September 24, 2025</p>
+                            <h5 className="font-medium">Gateway Advanced Technical + Wrap-Up (Mike)</h5>
+                            <p className="text-sm text-muted-foreground">Wed Sept 24, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -337,8 +403,8 @@ export default function Cohort12Schedule({
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-lg text-primary">🙋</span>
                           <div>
-                            <h5 className="font-medium">Office Hours with Mike</h5>
-                            <p className="text-sm text-muted-foreground">Thursday September 25, 2025</p>
+                            <h5 className="font-medium">Final Office Hours (Fede)</h5>
+                            <p className="text-sm text-muted-foreground">Thurs Sept 25, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -347,8 +413,8 @@ export default function Cohort12Schedule({
                         <div className="flex items-center gap-2 mb-1">
                           <span className="text-lg text-primary">🙋</span>
                           <div>
-                            <h5 className="font-medium">Office Hours with Fede</h5>
-                            <p className="text-sm text-muted-foreground">Friday September 26, 2025</p>
+                            <h5 className="font-medium">Final Office Hours (Mike)</h5>
+                            <p className="text-sm text-muted-foreground">Friday Sept 26, 2025</p>
                           </div>
                         </div>
                       </div>
@@ -361,9 +427,10 @@ export default function Cohort12Schedule({
                           <h4 className="font-bold text-lg">Week 3 Homework</h4>
                         </div>
                       </div>
-                      <p className="text-muted-foreground">
-                        Complete the implementation of your custom trading controller and create a 5-minute video presentation that demonstrates your strategy in action. Your video should explain the strategy's concept, implementation details, and show it running in a production environment—preparing you for the final Demo Day presentation.
-                      </p>
+                      <ul className="list-disc list-inside space-y-2 text-sm text-muted-foreground">
+                        <li>Finish the implementation of your controller</li>
+                        <li>Create a 5-minute video explaining the strategy and running it in production</li>
+                      </ul>
                     </div>
                   </div>
                 </CardContent>
@@ -386,11 +453,11 @@ export default function Cohort12Schedule({
                         <span className="text-xl text-primary">🥳</span>
                         <div>
                           <h4 className="font-bold text-lg">Demo Day</h4>
-                          <p className="text-sm text-muted-foreground">Tuesday September 30, 2025</p>
+                          <p className="text-sm text-muted-foreground">Tuesday Sept 30, 2025</p>
                         </div>
                       </div>
                       <p className="text-muted-foreground mb-6">
-                        The culmination of your Botcamp journey arrives with Demo Day, where each participant's video presentation will be showcased to the entire cohort. This celebration of achievement gives you the opportunity to present your trading strategy to peers and instructors while learning from the diverse approaches of fellow participants. The session concludes with students voting for the Cohort MVP, recognizing exceptional innovation and execution in strategy development.
+                        The culmination of your Botcamp journey arrives with Demo Day. We will play each submitted video presentation, allowing participants to showcase their custom trading strategies to peers and instructors. The session concludes with students voting for the Cohort MVP, recognizing exceptional innovation and execution in strategy development.
                       </p>
                     </div>
                     
@@ -410,7 +477,7 @@ export default function Cohort12Schedule({
                         </div>
                         <div className="flex-grow">
                           <p className="text-muted-foreground mb-4">
-                            Upon completing Demo Day, you'll be officially certified as a Hummingbot Market Maker. This prestigious recognition includes:
+                            Upon completing Demo Day, you'll earn a Hummingbot Certification in Market Making Strategy Development. This prestigious recognition includes:
                           </p>
                           <ul className="space-y-2 mb-4 text-left">
                             <li className="flex gap-2">
@@ -426,9 +493,6 @@ export default function Cohort12Schedule({
                               <span className="text-sm">Priority access to Hummingbot ecosystem opportunities and partnerships</span>
                             </li>
                           </ul>
-                          <p className="text-muted-foreground italic text-sm">
-                            Certification types include Market Maker, Strategy V2 Developer, and Script Developer based on your final project implementation.
-                          </p>
                         </div>
                       </div>
                     </div>
